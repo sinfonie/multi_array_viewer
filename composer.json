@@ -1,0 +1,25 @@
+{
+  "name": "sinfonie/multi_array_viewer",
+  "type": "library",
+  "license": "none",
+  "description": "Library that enables displaying data in the form of a table. Own and external data filtering and sorting.",
+  "version": "1.0.0",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Maciej Rumiński",
+      "homepage": "https://sinfonie.pl"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "support": {
+    "issues": "https://github.com/sinfonie/multi_array_viewer/issues"
+  },
+  "autoload": {
+    "classmap": [
+      "multi_array_viewer/src/"
+    ]
+  }
+}
