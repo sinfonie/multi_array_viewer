@@ -4,7 +4,7 @@
  * Class responsible for finding template variables and substituting the appropriate values.
  */
 
-namespace multiArrayViewer\src\helpers;
+namespace mavLibs\src\helpers;
 
 class template
 {

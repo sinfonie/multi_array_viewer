@@ -19,7 +19,8 @@
   },
   "autoload": {
     "classmap": [
-      "src/"
+      "mavLibs/src/"
     ]
   }
 }
+

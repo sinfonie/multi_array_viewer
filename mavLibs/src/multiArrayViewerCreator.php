@@ -6,11 +6,11 @@
  * @version 1.0.0
  */
 
-namespace multiArrayViewer\src;
+namespace mavLibs\src;
 
-use \multiArrayViewer\src\helpers\template;
-use \multiArrayViewer\src\helpers\validate;
-use \multiArrayViewer\src\helpers\translate;
+use mavLibs\src\helpers\template;
+use mavLibs\src\helpers\validate;
+use mavLibs\src\helpers\translate;
 
 class multiArrayViewerCreator
 {

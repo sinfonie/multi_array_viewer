@@ -4,7 +4,7 @@
  * Simple validation functions.
  */
 
-namespace multiArrayViewer\src\helpers;
+namespace mavLibs\src\helpers;
 
 class validate
 {

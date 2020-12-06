@@ -1,8 +1,8 @@
 <?php
 
-namespace multiArrayViewer\samples;
+namespace mavLibs\samples;
 
-use \multiArrayViewer\src\multiArrayViewerCreator as mAVC;
+use mavLibs\src\multiArrayViewerCreator as mAVC;
 
 //include this file to any file you are editing (remember to configure your current working path correctly).
 include_once 'loader.php';

@@ -5,7 +5,7 @@
  * It will return translated phrases in the future.
  */
 
-namespace multiArrayViewer\src\helpers;
+namespace mavLibs\src\helpers;
 
 class translate
 {
