@@ -38,6 +38,8 @@ class example
 
     $table->setColumnOrder(['id', 'first_name', 'last_name', 'date_of_birth']);
     $table->catchFormParams();
+    $table->templateBefore = '<div>Example';
+    $table->templateAfter  = '</div>';
     $table->setFilters('text', ['first_name', 'last_name']);
     $table->columnsSortDisabled(['last_name']);
     $table->data = self::$myArray;
@@ -48,3 +50,8 @@ class example
 }
 
 echo example::show();
+
+echo '<div>Below you can see an input array</div>';
+echo '<pre>';
+print_r(example::$myArray);
+echo '</pre>';

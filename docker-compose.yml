@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  multi_array_viewer:
+    image: php:7.4-apache
+    ports:
+      - 80:80
+    volumes:
+      - ./multi_array_viewer/:/var/www/html/
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    extra_hosts:
+      - "multi-array-viewer:127.0.0.1"
+    hostname: multi-array-viewer
+    domainname: multi-array-viewer
+
+volumes:
+    multi_array_viewer: {}
+
