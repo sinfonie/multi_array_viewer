@@ -14,7 +14,7 @@
 
   <?php
 
-  $files = scandir('samples');
+  $files = scandir('mavLibs/samples');
   $samples = array_filter($files, 'filterSamples');
 
   function filterSamples($i)
@@ -28,7 +28,7 @@
   {
     $output = '<div>';
     foreach ($samples as $sample) {
-      $output .= '<a class="btn btn-primary" href="samples/' . $sample . '">' . $sample . '</a>';
+      $output .= '<a class="btn btn-primary" href="mavLibs/samples/' . $sample . '">' . $sample . '</a>';
     }
     $output .= '</div>';
     return $output;

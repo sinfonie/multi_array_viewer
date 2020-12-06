@@ -1,7 +1,7 @@
 <?php
 
 $class_loader = function ($class) {
-  $prefix = 'multiArrayViewer\\';
+  $prefix = 'mavLibs\\';
   $base_dir = __DIR__ . '/../';
   $len = strlen($prefix);
 
@@ -9,6 +9,7 @@ $class_loader = function ($class) {
     return;
   }
   $relative_class = substr($class, $len);
+
   $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
   if (file_exists($file)) {
     require $file;
