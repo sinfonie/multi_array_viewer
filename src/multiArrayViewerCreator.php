@@ -25,8 +25,8 @@ class multiArrayViewerCreator
     }
 
     private static $translations = [
-        'limit'      => ['translation' => 'wyświetl:'],
-        'select_all' => ['translation' => 'wszystko'],
+        'limit'      => ['translation' => 'Limit: '],
+        'select_all' => ['translation' => 'Select all'],
     ];
 
     public $params = [
@@ -187,8 +187,8 @@ class multiArrayViewerCreator
     private function processTextTemplate($translations)
     {
         return template::create($this->templateBefore, $translations) .
-            '<div class="table-responsive">
-                  <table class="fcwp-table array-table multi table table-responsive">
+            '<div>
+                  <table>
                     <thead>' .
             template::create($this->createHeader(), $translations) .
             '</thead>
@@ -363,11 +363,11 @@ class multiArrayViewerCreator
             $currLimit = ($limit == $this->limit) ? 'current-limit' : null;
             $field = $this->formName . '_limit';
             $output .= '
-              <div class="limit-btn ' . $currLimit . '">
+              <span class="limit-btn ' . $currLimit . '">
                 <a href="?' . $field . '=' . $limit . '&' . $this->createCatchedString([$field]) . '">
                   <span>' . $limit . '</span>
                 </a>
-              </div>';
+              </span>';
         }
         $output .= '
           </th>

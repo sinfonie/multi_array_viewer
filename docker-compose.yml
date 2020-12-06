@@ -6,7 +6,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./multi_array_viewer/:/var/www/html/
+      - ./:/var/www/html/
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     extra_hosts:
       - "multi-array-viewer:127.0.0.1"
