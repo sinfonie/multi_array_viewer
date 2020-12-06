@@ -22,5 +22,5 @@ https://github.com/sinfonie/multi_array_viewer/archive/master.zip
 
 ## Configuration
 
-The [loader.php](mavLibs/samples/loader.php) include this file to any file you are editing
+[loader.php](mavLibs/samples/loader.php) include this file to any file you are editing
 (remember to configure your current working path correctly).
