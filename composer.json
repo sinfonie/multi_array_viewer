@@ -19,7 +19,7 @@
   },
   "autoload": {
     "classmap": [
-      "multi_array_viewer/src/"
+      "src/"
     ]
   }
 }
